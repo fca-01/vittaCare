@@ -20,7 +20,7 @@ export function FancyTitle({ children, className = '', size = 'md' }: { children
 
 export function Description({ children, className = '', width = 'md' }: { children: React.ReactNode, className?: string, width?: 'sm' | 'md' | 'lg' }) {
   return (
-    <p className={cn(`text-base md:text-lg text-wrap  text-[#102e16] font-sans pb-2 ${className}`, width === 'sm' && 'w-fit', width === 'md' && 'w-fit md:w-[35vw]', width === 'lg' && 'md:w-[45vw]')}>
+    <p className={cn(`text-base md:text-lg text-wrap  text-[#102e16] font-sans pb-2 ${className}`, width === 'sm' && 'w-fit', width === 'md' && 'w-full', width === 'lg' && 'md:w-[45vw]')}>
       {children}
     </p>
   )

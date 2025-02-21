@@ -5,7 +5,7 @@ import { FancyTitle, Title } from "../text/texts";
 export default function ReviewSection() {
 
   return (
-    <div className="h-fit md:h-[50vh] p-5 mb-10 md:mx-20 ">
+    <div className="h-fit  p-5 mb-10 md:mx-20 ">
       <div className="flex justify-center">
         <Title size="lg">
           Avaliações dos nossos <FancyTitle size="lg">clientes</FancyTitle>
@@ -20,7 +20,7 @@ export default function ReviewSection() {
 
 function ReviewCard() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-4  gap-5">
+    <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4  gap-5">
       {clients.map((client, index) => (
         <div key={index} className="bg-[#c6d6b1] rounded-xl w-full h-fit flex flex-col gap-5 justify-start items-start p-3 md:p-5 font-sans">
           <div className="flex gap-2 items-center">
